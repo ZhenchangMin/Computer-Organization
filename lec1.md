@@ -138,7 +138,7 @@ CPU、主存、I/O模块都通过总线连接
 浮点操作速度：MFLOPS，Million Floating-point Operations Per Second
 
 ![优化编译器](image/lec1/优化编译器.png)
-在这个例子中，由于我们减少了50%的ALU，所以ALU部分由43%变为21.5%，所以百分比重新计算，CPI则是每个百分比乘以cycle数再求和，最终结果是CPI增加了。由于我们减少了ALU指令，程序执行时间一定变少了。但是我们计算MIPS时，是用频率除以CPI(因为$MIPS\times T\times CPI=1$条指令)，所以MIPS增加了。由此可见所以MIPS数不能说明性能的好坏。
+在这个例子中，由于我们减少了50%的ALU，所以ALU部分由43%变为21.5%，所以百分比重新计算，CPI则是每个百分比乘以cycle数再求和，最终结果是CPI增加了。由于我们减少了ALU指令，程序执行时间一定变少了。但是我们计算MIPS时，是用频率除以CPI(因为$MIPS\times T\times CPI=1$M条指令)，所以MIPS增加了。由此可见所以MIPS数不能说明性能的好坏。
 
 ### 用基准程序进行性能评估
 
