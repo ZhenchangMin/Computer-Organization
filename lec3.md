@@ -33,7 +33,7 @@ $C_{out} = X_iY_i + (X_i + Y_i)C_{i-1}$
 定义两个辅助函数Gi和Pi
 $G_i = X_iY_i$ 进位产生函数
 $P_i = X_i + Y_i$ 进位传递函数
-全加逻辑函数：$F_i = X_I \oplus Y_I \oplus C_{i-1}$
+全加逻辑函数：$F_i = X_i \oplus Y_i \oplus C_{i-1}$
 $C_{i+1} = X_iY_i + (X_i + Y_i)C_i = G_{i} + P_{i}C_i$
 所有进位独立并同时生成，相当于每个Ci都是已知项，虽然提高了时间效率，但是逻辑部件的设计会很复杂
 设n=4,则：$C_1=G_0+P_0C_0$
